@@ -1,0 +1,11 @@
+label: Externe Links
+type: structure
+fields:
+  link:
+    label: URL
+    width: 1/2
+    type: url
+    translate: false
+  name:
+    width: 1/2
+    type: text

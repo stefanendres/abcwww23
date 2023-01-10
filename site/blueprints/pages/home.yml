@@ -1,0 +1,27 @@
+title: Home Page
+
+columns:
+  main:
+    width: 2/3
+    sections:
+      fields:
+        type: fields
+        fields:
+          home_starter_image:
+            label: Starter Bild
+            type: files
+            width: 1/3
+            uploads:
+              template: image
+          home_description:
+            label: Beschreibung
+            type: writer
+            width: 2/3
+            size: huge
+  sidebar:
+    width: 1/3
+    sections:
+      pages:
+        label: Projekte
+        type: pages
+        template: project

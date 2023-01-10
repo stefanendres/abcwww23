@@ -1,0 +1,13 @@
+type: group
+fields:
+  meta_description:
+    label: Meta Beschreibung
+    type: text
+    maxlength: 160
+  meta_image:
+    label: Meta Bild
+    help: Meta Information ist nur für Suchmaschinen und Teilen-Funktionen sichtbar.
+    translate: false
+    type: files
+    multible: false
+    max: 1

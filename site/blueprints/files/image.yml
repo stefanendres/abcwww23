@@ -1,0 +1,19 @@
+title: Image
+accept:
+  mime: image/jpeg, image/png, image/gif, image/svg+xml
+
+fields:
+  caption:
+    width: 1/2
+    label: Bild Untertitel
+    type: writer
+    marks:
+      - bold
+    nodes: false
+  alt:
+    width: 1/2
+    label: Alt Text
+    help: Nicht sichtbar - wird für Barrierefreiheit-Funktionen wie Screen-reader etc. benötigt
+    type: text
+  link:
+    type: url

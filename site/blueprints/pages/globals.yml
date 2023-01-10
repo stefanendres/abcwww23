@@ -1,0 +1,59 @@
+title: Globals
+pages: false
+files: false
+
+tabs:
+  graphics:
+    label: Grafiken & Icons
+    fields:
+      favicon:
+        type: files
+        width: 1/4
+        translate: false
+        layout: cards
+        image:
+          back: white
+        size: tiny
+        max: 1
+      site_logo:
+        label: Seiten-Logo
+        type: files
+        width: 1/4
+        translate: false
+        layout: cards
+        image:
+          back: white
+        size: tiny
+        max: 1
+        uploads:
+          template: image
+  header:
+    fields:
+      main_menu:
+        label: Haupt-Navigation
+        width: 1/3
+        type: pages
+  footer:
+    fields:
+      footer_external_links:
+        label: Externe Links
+        type: structure
+        width: 1/2
+        columns:
+          footer_link_name:
+          footer_link_url:
+        fields:
+          footer_link_url:
+            label: URL
+            width: 1/2
+            type: url
+            translate: false
+          footer_link_name:
+            label: Name
+            width: 1/2
+            type: text
+          footer_link_style:
+            label: Darstellung
+            type: toggle
+            text: Highlight
+            translate: false

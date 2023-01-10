@@ -1,0 +1,24 @@
+Title: Globals
+
+----
+
+Favicon: - file://vmq2mvtR0nBh311U
+
+----
+
+Site-logo: - file://vmq2mvtR0nBh311U
+
+----
+
+Main-menu:
+
+- page://iBAatxjo0eNxutcm
+- page://ISFTWJXQbypKbqwq
+
+----
+
+Footer-external-links: 
+
+----
+
+Uuid: iOE5j94fZmypTclG
