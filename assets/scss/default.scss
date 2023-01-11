@@ -16,6 +16,11 @@ html {
 
 body {
   background-color: $body_color;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 
@@ -30,8 +35,38 @@ header {
   padding-right: 5vw;
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
-  
+
   background-color: white;
+
+  box-shadow: 0 .5vh 1.25vh rgba(0, 0, 0, 0.25);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+.menu-link .site-logo {
+  width: 10vw;
+  border-radius: 2vw;
+}
+
+.menu-link:not(:first-child) {
+  margin-left: 5vw;
+  padding: 0.25em 0.5em;
+  
+  font-size: clamp(15px, 5vw, 25px);
+
+  color: black;
+  background-color: lightgrey;
+  border-radius: 2vw;
+
+  transition: background-color 0.3s ease-in-out;
+}
+
+.menu-link:not(:first-child):hover,
+.menu-link:not(:first-child).active {
+  color: white;
+  background-color: black;
 }
 
 main {
@@ -51,21 +86,86 @@ main {
   object-position: center;
 }
 
-
-
-
-
-
-
-
-
-
-.menu-link {
-  &.active{
-  }
+.description-container {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
 }
 
-.menu-link.active {
+.description-container h1 {
+  font-size: clamp(25px, 7.5vw, 50px);
 }
+.description-container p {
+  font-size: clamp(15px, 5vw, 25px);
+}
+
+
+
+/* projects overview */
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.projects-container .project-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 33.333%;
+  padding: clamp(15px, 5vw, 25px);
+}
+.projects-container .project-link .project-thumbnail {
+  width: 100%;
+  border-radius: 2vw;
+}
+.projects-container .project-link .project-title {
+  font-size: clamp(15px, 5vw, 25px);
+  padding: clamp(5px, 1.25vw, 10px);
+  text-align: center;
+  color: black;
+}
+
+
+
+/* project subpage */
+
+.project-row {
+  display: flex;
+}
+
+.project-column {
+  padding: clamp(15px, 5vw, 25px);
+}
+
+.width-1_1 {
+  width: 100%;
+}
+
+.width-1_6 {
+  width: 100%/6;
+}
+
+.width-1_3 {
+  width: 100%/3;
+}
+
+.width-1_2 {
+  width: 100%/2;
+}
+
+.width-2_3 {
+  width: 2 * 100% / 3;
+}
+
+.project-image {
+  display: flex;
+  width: 100%;
+  border-radius: 2vw;
+}
+
 
 

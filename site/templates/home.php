@@ -15,7 +15,7 @@
         <?php if ($project_page->project_thumbnail()->isNotEmpty()): ?>
           <img class="project-thumbnail" src="<?= $project_page->project_thumbnail()->toFile()->url() ?>">
         <?php endif ?>
-        <div class="project-title">
+        <div class="project-title fontsize-l">
           <?= $project_page->title() ?>
         </div>
       </a>
