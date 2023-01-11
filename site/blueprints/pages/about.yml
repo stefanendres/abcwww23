@@ -9,5 +9,5 @@ columns:
         fields:
           about_text:
             label: About Text
-            type: textarea
+            type: writer
             size: small
