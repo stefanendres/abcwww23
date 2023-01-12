@@ -85,7 +85,7 @@ header nav {
   background-color: lightgrey;
   border-radius: 2vw;
 
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 1.3s ease, color 13s ease;
 }
 
 .menu-link:not(:first-child):hover,
@@ -141,7 +141,24 @@ header nav {
   justify-content: center;
   width: 33.333%;
   padding: clamp(15px, 5vw, 25px);
+
+  
 }
+
+.projects-container .project-link .project-title,
+.projects-container .project-link .project-thumbnail {
+  transition: transform 0.3s ease-out;
+}
+
+.projects-container .project-link:hover .project-title {
+  transform: translate3d(0,-1.25vh,0); // (x, y, z)
+}
+
+.projects-container .project-link:hover .project-thumbnail {
+  transform: translate3d(0, -1.25vh, 0) rotate(360deg); 
+}
+
+
 @media all and (max-width: 800px) and (orientation: portrait) {
   .projects-container .project-link {
     width: 100%;
