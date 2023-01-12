@@ -1,8 +1,13 @@
+/* global styles */
+
 //scss variables
 $body_color: lightgrey;
 
 //css variables
 :root {
+  --fontsize_medium: 16px;
+}
+body {
   --fontsize_medium: 16px;
 }
 
@@ -19,10 +24,18 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  position: relative;
+  z-index: 1;
+}
+
 a {
   text-decoration: none;
 }
 
+
+
+/* header styles */
 
 header {
   position: sticky;
@@ -35,6 +48,20 @@ header {
   padding-right: 5vw;
   padding-top: 2.5vw;
   padding-bottom: 2.5vw;
+
+  /*
+
+  shortened alternatives for padding:
+
+  padding: 2.5vw 5vw 2.5vw 5vw;
+  = padding: top right bottom left; 
+  
+  padding: 2.5vw 5vw;
+  = padding: top-bottom left-right;
+
+  */
+
+
 
   background-color: white;
 
@@ -69,10 +96,8 @@ header nav {
   background-color: black;
 }
 
-main {
-  position: relative;
-  z-index: 1;
-}
+
+/* home starter styles */
 
 .starter-image-container {
   width: 100vw;
@@ -102,7 +127,7 @@ main {
 
 
 
-/* projects overview */
+/* home projects overview styles */
 
 .projects-container {
   display: flex;
@@ -131,14 +156,16 @@ main {
 
 
 
-/* project subpage */
+/* project subpage content grid styles */
 
-.project-row {
+.project-row,
+.project-column {
   display: flex;
+  padding: 0 clamp(15px, 5vw, 25px);
 }
 
 .project-column {
-  padding: clamp(15px, 5vw, 25px);
+  height: 100%;
 }
 
 .width-1_1 {
