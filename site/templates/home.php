@@ -9,6 +9,14 @@
   <div class="description-container">
     <?= $page->home_description() ?>
   </div>
+  <div class="projects-heading">
+    <div class="projects-heading-text">
+      <?= str_repeat('Projekte ', 5) ?>//
+    </div>
+    <div class="projects-heading-text">
+      <?= str_repeat('Projekte ', 5) ?>//
+    </div>
+  </div>
   <div class="projects-container">
     <?php foreach ($page->children() as $project_page): ?>
       <a class="project-link" href="<?= $project_page->url() ?>">
@@ -21,7 +29,5 @@
       </a>
     <?php endforeach ?>
 </main>
-<footer>
-  
-</footer>
+<?php snippet('footer'); ?>
 <?php snippet('foot'); ?>

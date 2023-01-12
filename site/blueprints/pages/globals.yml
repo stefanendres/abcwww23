@@ -35,6 +35,10 @@ tabs:
         type: pages
   footer:
     fields:
+      legal_menu:
+        label: Legal-Navigation
+        width: 1/3
+        type: pages
       footer_external_links:
         label: Externe Links
         type: structure
