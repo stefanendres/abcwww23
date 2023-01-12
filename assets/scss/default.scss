@@ -7,9 +7,6 @@ $body_color: lightgrey;
 :root {
   --fontsize_medium: 16px;
 }
-body {
-  --fontsize_medium: 16px;
-}
 
 * {
   box-sizing: border-box;
@@ -20,6 +17,7 @@ html {
 }
 
 body {
+  width: 100%;
   background-color: $body_color;
   overflow-x: hidden;
 }
@@ -136,6 +134,7 @@ header nav {
   flex-wrap: wrap;
   width: 100%;
 }
+
 .projects-container .project-link {
   display: flex;
   flex-direction: column;
@@ -143,6 +142,12 @@ header nav {
   width: 33.333%;
   padding: clamp(15px, 5vw, 25px);
 }
+@media all and (max-width: 800px) and (orientation: portrait) {
+  .projects-container .project-link {
+    width: 100%;
+  }
+}
+
 .projects-container .project-link .project-thumbnail {
   width: 100%;
   border-radius: 2vw;
@@ -166,6 +171,7 @@ header nav {
 
 .project-column {
   height: 100%;
+  padding: clamp(15px, 5vw, 25px);
 }
 
 .width-1_1 {
@@ -186,6 +192,28 @@ header nav {
 
 .width-2_3 {
   width: 2 * 100% / 3;
+}
+
+@media all and (max-width: 1000px) {
+  .project-row {
+    flex-wrap: wrap;
+  }
+  //.width-1_1,
+  .width-1_6,
+  .width-1_3,
+  .width-1_2,
+  .width-2_3 {
+    width: 50%;
+  }
+}
+@media all and (max-width: 800px) and (orientation: portrait) {
+  .width-1_1,
+  .width-1_6,
+  .width-1_3, 
+  .width-1_2, 
+  .width-2_3 {
+    width: 100%;
+  }
 }
 
 .project-image {
